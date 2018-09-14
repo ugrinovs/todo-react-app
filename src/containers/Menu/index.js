@@ -25,7 +25,7 @@ class Menu extends Component {
 }
 
 function mapStateToProps(state) {
-  return { authenticated: state.user };
+  return { authenticated: state.user.authenticated };
 }
 
 function mapDispatchToProps(dispatch) {
