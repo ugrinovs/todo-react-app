@@ -23,3 +23,10 @@ function logoutSuccess() {
     type: 'LOGOUT_SUCCESS'
   };
 }
+
+function validationError(error) {
+  return {
+    type: 'VALIDATION_ERROR',
+    error
+  }
+}

@@ -11,7 +11,9 @@ function* login({ loginData }) {
     localStorage.setItem('jwtToken', data.jwt);
     yield put({ type: 'LOGIN_SUCCESS', token: data.jwt });
     console.log(data);
-  } catch (error) {}
+  } catch (error) {
+    yield put({ type: 'VALIDATION_ERROR', error: error.response.data })
+  }
 }
 
 function* auth() {
