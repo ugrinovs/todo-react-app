@@ -1,0 +1,19 @@
+.item-list {
+  padding: 0;
+
+  .item {
+    padding: 15px 10px;
+    border-bottom: 2px solid gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+
+    .todo-text {
+      font-size: 18px;
+    }
+  }
+}

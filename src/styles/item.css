@@ -1,0 +1,6 @@
+.todo-input {
+  padding: 14px;
+  margin-left: 15px; }
+
+.completed {
+  text-decoration: line-through; }

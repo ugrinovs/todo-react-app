@@ -6440,6 +6440,17 @@ label.panel-block {
   border-bottom: 1px gainsboro solid;
   background-color: ghostwhite; }
 
+.loader-overlay {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.loader {
+  width: 150px;
+  height: 150px; }
+
 .item-list {
   padding: 0; }
   .item-list .item {
@@ -6453,46 +6464,6 @@ label.panel-block {
     .item-list .item .todo-text {
       font-size: 18px; }
 
-.btn {
-  padding: 10px 15px;
-  border: 1px solid gainsboro; }
-  .btn:hover {
-    background-color: #eee; }
-  .btn:active {
-    background-color: #bbb;
-    box-shadow: 0px -1px 10px -3px #000 inset; }
-  .btn:focus, .btn:active, .btn:visited {
-    outline: none; }
-
-.btn-green {
-  background-color: darkseagreen; }
-
-.btn:active .icon-edit, .btn:active .icon-confirm, .btn:active .icon-trash {
-  transform: scale(0.9); }
-
-.icon-trash {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background: url("./icons/trash-can.png") center/24px; }
-
-.icon-edit {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background: url("./icons/pencil.png") center/24px; }
-
-.icon-confirm {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background: url("./icons/checkmark-32.png") center/24px; }
-
-.align-right {
-  float: right;
-  margin: 10px;
-  color: white; }
-
 .todo-input {
   padding: 14px;
   margin-left: 15px; }
@@ -6500,13 +6471,7 @@ label.panel-block {
 .completed {
   text-decoration: line-through; }
 
-.loader-overlay {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.loader {
-  width: 150px;
-  height: 150px; }
+.align-right {
+  float: right;
+  margin: 10px;
+  color: white; }
