@@ -66,9 +66,9 @@ class Login extends Component {
 
     return (
       <Card actionButtons={actionButtons} ref={this.loginForm}>
-        {this.props.error.hasError && <div className="has-text-danger">
-          {this.props.error.message}
-        </div>}
+        {this.props.error.hasError && (
+          <div className="has-text-danger">{this.props.error.message}</div>
+        )}
         <InputField
           label="Name"
           type="text"
@@ -91,7 +91,7 @@ class Login extends Component {
 function mapStateToProps(state) {
   return {
     error: state.user.error
-  }
+  };
 }
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
